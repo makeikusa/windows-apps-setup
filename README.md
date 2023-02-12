@@ -1,6 +1,6 @@
 # windows-apps-setup
 
 
-$url = "https://api.github.com/repos/makeikusa/windows-apps-setup"
-$destination = "$home\downloads\windows-apps-setup.zip"
-Invoke-WebRequest -Uri $url -OutFile $destination
+$url = "https://github.com/makeikusa/windows-apps-setup/archive/main.zip"
+$zipFile = "windows-apps-setup.zip"
+Invoke-WebRequest $url -OutFile $zipFile
